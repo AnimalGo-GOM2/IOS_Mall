@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		846137B124C14EB700E69A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137B024C14EB700E69A88 /* AppDelegate.swift */; };
+		846137B524C14EB700E69A88 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137B424C14EB700E69A88 /* MainViewController.swift */; };
+		846137B824C14EB700E69A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846137B624C14EB700E69A88 /* Main.storyboard */; };
+		846137BA24C14EBB00E69A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846137B924C14EBB00E69A88 /* Assets.xcassets */; };
+		846137BD24C14EBB00E69A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846137BB24C14EBB00E69A88 /* LaunchScreen.storyboard */; };
+		846137CA24C1504100E69A88 /* BaseWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137C424C1504000E69A88 /* BaseWebView.swift */; };
+		846137CB24C1504100E69A88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137C624C1504000E69A88 /* Constants.swift */; };
+		846137CC24C1504100E69A88 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846137C724C1504000E69A88 /* SplashView.xib */; };
+		846137CD24C1504100E69A88 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137C824C1504100E69A88 /* SplashView.swift */; };
+		846137D124C1515F00E69A88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137CF24C1515F00E69A88 /* Extensions.swift */; };
+		846137D224C1515F00E69A88 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846137D024C1515F00E69A88 /* Functions.swift */; };
+		848DC83424C52ECD00B8AFFB /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DC83324C52ECD00B8AFFB /* NotificationService.swift */; };
+		848DC83824C52ECD00B8AFFB /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 848DC83124C52ECC00B8AFFB /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3DEB8F8B9C7572276B08C61 /* Pods_AnimalGo_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAC3F630BD40117A96A2248 /* Pods_AnimalGo_Market.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848DC83624C52ECD00B8AFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 846137A524C14EB700E69A88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848DC83024C52ECC00B8AFFB;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		848DC83924C52ECD00B8AFFB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				848DC83824C52ECD00B8AFFB /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7BE9E1B333C942F594D87FC7 /* Pods-AnimalGo Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalGo Market.release.xcconfig"; path = "Target Support Files/Pods-AnimalGo Market/Pods-AnimalGo Market.release.xcconfig"; sourceTree = "<group>"; };
+		846137AD24C14EB700E69A88 /* 애니멀고 마켓.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "애니멀고 마켓.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		846137B024C14EB700E69A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846137B424C14EB700E69A88 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		846137B724C14EB700E69A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		846137B924C14EBB00E69A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846137BC24C14EBB00E69A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		846137BE24C14EBB00E69A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846137C424C1504000E69A88 /* BaseWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebView.swift; sourceTree = "<group>"; };
+		846137C624C1504000E69A88 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		846137C724C1504000E69A88 /* SplashView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
+		846137C824C1504100E69A88 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		846137CF24C1515F00E69A88 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		846137D024C1515F00E69A88 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		846137D324C155DE00E69A88 /* AnimalGo Market.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AnimalGo Market.entitlements"; sourceTree = "<group>"; };
+		848DC83124C52ECC00B8AFFB /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		848DC83324C52ECD00B8AFFB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		848DC83524C52ECD00B8AFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE7D78850D6544AA8E66453 /* Pods-AnimalGo Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalGo Market.debug.xcconfig"; path = "Target Support Files/Pods-AnimalGo Market/Pods-AnimalGo Market.debug.xcconfig"; sourceTree = "<group>"; };
+		DEAC3F630BD40117A96A2248 /* Pods_AnimalGo_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalGo_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846137AA24C14EB700E69A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DEB8F8B9C7572276B08C61 /* Pods_AnimalGo_Market.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848DC82E24C52ECC00B8AFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		846137A424C14EB700E69A88 = {
+			isa = PBXGroup;
+			children = (
+				846137AF24C14EB700E69A88 /* AnimalGo Market */,
+				848DC83224C52ECC00B8AFFB /* OneSignalNotificationServiceExtension */,
+				846137AE24C14EB700E69A88 /* Products */,
+				DE90B29A28C9BCA39C8C472A /* Pods */,
+				DBFF2FBFF7BC52249A264770 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		846137AE24C14EB700E69A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846137AD24C14EB700E69A88 /* 애니멀고 마켓.app */,
+				848DC83124C52ECC00B8AFFB /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846137AF24C14EB700E69A88 /* AnimalGo Market */ = {
+			isa = PBXGroup;
+			children = (
+				846137D324C155DE00E69A88 /* AnimalGo Market.entitlements */,
+				846137C524C1504000E69A88 /* Common */,
+				846137C424C1504000E69A88 /* BaseWebView.swift */,
+				846137B024C14EB700E69A88 /* AppDelegate.swift */,
+				846137B424C14EB700E69A88 /* MainViewController.swift */,
+				846137B624C14EB700E69A88 /* Main.storyboard */,
+				846137B924C14EBB00E69A88 /* Assets.xcassets */,
+				846137BB24C14EBB00E69A88 /* LaunchScreen.storyboard */,
+				846137BE24C14EBB00E69A88 /* Info.plist */,
+			);
+			path = "AnimalGo Market";
+			sourceTree = "<group>";
+		};
+		846137C524C1504000E69A88 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				846137CF24C1515F00E69A88 /* Extensions.swift */,
+				846137D024C1515F00E69A88 /* Functions.swift */,
+				846137C624C1504000E69A88 /* Constants.swift */,
+				846137C724C1504000E69A88 /* SplashView.xib */,
+				846137C824C1504100E69A88 /* SplashView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		848DC83224C52ECC00B8AFFB /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				848DC83324C52ECD00B8AFFB /* NotificationService.swift */,
+				848DC83524C52ECD00B8AFFB /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		DBFF2FBFF7BC52249A264770 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC3F630BD40117A96A2248 /* Pods_AnimalGo_Market.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE90B29A28C9BCA39C8C472A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE7D78850D6544AA8E66453 /* Pods-AnimalGo Market.debug.xcconfig */,
+				7BE9E1B333C942F594D87FC7 /* Pods-AnimalGo Market.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846137AC24C14EB700E69A88 /* AnimalGo Market */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846137C124C14EBB00E69A88 /* Build configuration list for PBXNativeTarget "AnimalGo Market" */;
+			buildPhases = (
+				D24F31839549E386F07AFB36 /* [CP] Check Pods Manifest.lock */,
+				846137A924C14EB700E69A88 /* Sources */,
+				846137AA24C14EB700E69A88 /* Frameworks */,
+				846137AB24C14EB700E69A88 /* Resources */,
+				848DC83924C52ECD00B8AFFB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848DC83724C52ECD00B8AFFB /* PBXTargetDependency */,
+			);
+			name = "AnimalGo Market";
+			productName = "AnimalGo Market";
+			productReference = 846137AD24C14EB700E69A88 /* 애니멀고 마켓.app */;
+			productType = "com.apple.product-type.application";
+		};
+		848DC83024C52ECC00B8AFFB /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848DC83C24C52ECD00B8AFFB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				848DC82D24C52ECC00B8AFFB /* Sources */,
+				848DC82E24C52ECC00B8AFFB /* Frameworks */,
+				848DC82F24C52ECC00B8AFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 848DC83124C52ECC00B8AFFB /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846137A524C14EB700E69A88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = ios.kiwon;
+				TargetAttributes = {
+					846137AC24C14EB700E69A88 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					848DC83024C52ECC00B8AFFB = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 846137A824C14EB700E69A88 /* Build configuration list for PBXProject "AnimalGo Market" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 846137A424C14EB700E69A88;
+			productRefGroup = 846137AE24C14EB700E69A88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846137AC24C14EB700E69A88 /* AnimalGo Market */,
+				848DC83024C52ECC00B8AFFB /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846137AB24C14EB700E69A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846137BD24C14EBB00E69A88 /* LaunchScreen.storyboard in Resources */,
+				846137CC24C1504100E69A88 /* SplashView.xib in Resources */,
+				846137BA24C14EBB00E69A88 /* Assets.xcassets in Resources */,
+				846137B824C14EB700E69A88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848DC82F24C52ECC00B8AFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D24F31839549E386F07AFB36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalGo Market-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846137A924C14EB700E69A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846137B524C14EB700E69A88 /* MainViewController.swift in Sources */,
+				846137D124C1515F00E69A88 /* Extensions.swift in Sources */,
+				846137CA24C1504100E69A88 /* BaseWebView.swift in Sources */,
+				846137D224C1515F00E69A88 /* Functions.swift in Sources */,
+				846137CD24C1504100E69A88 /* SplashView.swift in Sources */,
+				846137B124C14EB700E69A88 /* AppDelegate.swift in Sources */,
+				846137CB24C1504100E69A88 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848DC82D24C52ECC00B8AFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848DC83424C52ECD00B8AFFB /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848DC83724C52ECD00B8AFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848DC83024C52ECC00B8AFFB /* OneSignalNotificationServiceExtension */;
+			targetProxy = 848DC83624C52ECD00B8AFFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		846137B624C14EB700E69A88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846137B724C14EB700E69A88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		846137BB24C14EBB00E69A88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846137BC24C14EBB00E69A88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		846137BF24C14EBB00E69A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		846137C024C14EBB00E69A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		846137C224C14EBB00E69A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE7D78850D6544AA8E66453 /* Pods-AnimalGo Market.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AnimalGo Market/AnimalGo Market.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = CGB9ZY6TSF;
+				INFOPLIST_FILE = "AnimalGo Market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.animalgo-market.mobileapp";
+				PRODUCT_NAME = "애니멀고 마켓";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		846137C324C14EBB00E69A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BE9E1B333C942F594D87FC7 /* Pods-AnimalGo Market.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AnimalGo Market/AnimalGo Market.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = CGB9ZY6TSF;
+				INFOPLIST_FILE = "AnimalGo Market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.animalgo-market.mobileapp";
+				PRODUCT_NAME = "애니멀고 마켓";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		848DC83A24C52ECD00B8AFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = CGB9ZY6TSF;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.animalgo-market.mobileapp.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848DC83B24C52ECD00B8AFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = CGB9ZY6TSF;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.animalgo-market.mobileapp.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846137A824C14EB700E69A88 /* Build configuration list for PBXProject "AnimalGo Market" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846137BF24C14EBB00E69A88 /* Debug */,
+				846137C024C14EBB00E69A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846137C124C14EBB00E69A88 /* Build configuration list for PBXNativeTarget "AnimalGo Market" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846137C224C14EBB00E69A88 /* Debug */,
+				846137C324C14EBB00E69A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848DC83C24C52ECD00B8AFFB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848DC83A24C52ECD00B8AFFB /* Debug */,
+				848DC83B24C52ECD00B8AFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 846137A524C14EB700E69A88 /* Project object */;
+}
